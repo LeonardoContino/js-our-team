@@ -18,11 +18,15 @@ Organizzare i singoli membri in card/schede e rendere la pagina gradevole (potet
 const mainCard = document.getElementById("main-card");
 console.log(mainCard);
 
+//immagini
+const imgceo = document.createElement("img");
+imgceo.src = "img/wayne-barnett-founder-ceo.jpg";
+
 //creo un'array di oggetti
 
 const cards = [
   {
-    foto: "fotoCEO",
+    foto: imgceo.src,
     nome: "Wayne Barnett",
     ruolo: "Founder & CEO",
   },
@@ -60,9 +64,9 @@ for (let i = 0; i < cards.length; i++) {
   const Currentcards = cards[i];
   console.log(Currentcards);
 
-  mainCard.innerHTML += `<div class=“card-person”>
-    <div class="card-image">${Currentcards.foto}</div> 
-    <div class="card-name">${Currentcards.nome}</div> 
-    <div class="card-ruole">${Currentcards.ruolo}</div> 
+  mainCard.innerHTML += `<div class=card-person>
+    <div class=card-image>${Currentcards.foto}</div> 
+    <div class=card-name>${Currentcards.nome}</div> 
+    <div class=card-ruole>${Currentcards.ruolo}</div> 
     </div>`;
 }

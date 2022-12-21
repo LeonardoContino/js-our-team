@@ -1,3 +1,6 @@
-.card-person {
+.main-card {
   text-align: center;
+}
+.card-person {
+  border: 2px solid black;
 }
