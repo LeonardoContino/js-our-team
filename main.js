@@ -59,4 +59,5 @@ console.table(cards);
 for (let i = 0; i < cards.length; i++) {
   const Currentcards = cards[i];
   console.log(Currentcards);
+  mainCard.innerHTML = `<div class="card-person">${Currentcards}</div>`;
 }
