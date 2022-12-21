@@ -49,7 +49,7 @@ const cards = [
     ruolo: "Developer",
   },
   {
-    foto: "Barbarawalter",
+    foto: "Barbarapicture",
     nome: "Barbara Ramos",
     ruolo: "Graphic Designer",
   },
@@ -59,5 +59,9 @@ console.table(cards);
 for (let i = 0; i < cards.length; i++) {
   const Currentcards = cards[i];
   console.log(Currentcards);
-  mainCard.innerHTML = `<div class="card-person">${Currentcards}</div>`;
+
+  mainCard.innerHTML =
+    `<div class=“card-person”>${Currentcards.foto}</div>` +
+    `<div class=“card-person”>${Currentcards.nome}</div>` +
+    `<div class=“card-person”>${Currentcards.ruolo}</div>`;
 }

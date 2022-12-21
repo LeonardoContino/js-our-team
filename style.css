@@ -2,4 +2,5 @@
   border: 2px solid black;
   width: calc(100% / 3);
   min-height: 300px;
+  display: flex;
 }
