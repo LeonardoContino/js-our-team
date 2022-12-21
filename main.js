@@ -60,7 +60,7 @@ for (let i = 0; i < cards.length; i++) {
   const Currentcards = cards[i];
   console.log(Currentcards);
 
-  mainCard.innerHTML =
+  mainCard.innerHTML +=
     `<div class=“card-person”>${Currentcards.foto}</div>` +
     `<div class=“card-person”>${Currentcards.nome}</div>` +
     `<div class=“card-person”>${Currentcards.ruolo}</div>`;
