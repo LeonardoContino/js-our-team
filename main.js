@@ -61,8 +61,8 @@ for (let i = 0; i < cards.length; i++) {
   console.log(Currentcards);
 
   mainCard.innerHTML += `<div class=“card-person”>
-    <div>${Currentcards.foto}</div> 
-    <div>${Currentcards.nome}</div> 
-    <div>${Currentcards.ruolo}</div> 
+    <div class="card-image">${Currentcards.foto}</div> 
+    <div class="card-name">${Currentcards.nome}</div> 
+    <div class="card-ruole">${Currentcards.ruolo}</div> 
     </div>`;
 }
