@@ -56,4 +56,7 @@ const cards = [
 ];
 console.table(cards);
 
-mainCard.innerText = cards;
+for (let i = 0; i < cards.length; i++) {
+  const Currentcards = cards[i];
+  console.log(Currentcards);
+}
