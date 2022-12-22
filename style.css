@@ -2,5 +2,8 @@
   text-align: center;
 }
 .card-person {
-  border: 2px solid black;
+  padding: 20px;
+}
+.card-name {
+  padding: 5px;
 }
