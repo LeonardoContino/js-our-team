@@ -18,42 +18,38 @@ Organizzare i singoli membri in card/schede e rendere la pagina gradevole (potet
 const mainCard = document.getElementById("main-card");
 console.log(mainCard);
 
-//immagini
-const imgceo = document.createElement("img");
-imgceo.src = "img/wayne-barnett-founder-ceo.jpg";
-
 //creo un'array di oggetti
 
 const cards = [
   {
-    foto: imgceo.src,
+    foto: "wayne-barnett-founder-ceo.jpg",
     nome: "Wayne Barnett",
     ruolo: "Founder & CEO",
   },
 
   {
-    foto: "fotoAngela",
+    foto: "angela-caroll-chief-editor.jpg",
     nome: "Angela Caroll",
     ruolo: "Chief Editor",
   },
 
   {
-    foto: "picturewalter",
+    foto: "walter-gordon-office-manager.jpg",
     nome: "Walter Gordon",
     ruolo: "Office Manager",
   },
   {
-    foto: "pictureAngela2",
+    foto: "angela-lopez-social-media-manager.jpg",
     nome: "Angela Lopez",
     ruolo: "Socila Media Manager",
   },
   {
-    foto: "picturescott",
+    foto: "scott-estrada-developer.jpg",
     nome: "Scott Estrada",
     ruolo: "Developer",
   },
   {
-    foto: "Barbarapicture",
+    foto: "barbara-ramos-graphic-designer.jpg",
     nome: "Barbara Ramos",
     ruolo: "Graphic Designer",
   },
@@ -65,7 +61,7 @@ for (let i = 0; i < cards.length; i++) {
   console.log(Currentcards);
 
   mainCard.innerHTML += `<div class=card-person>
-    <div class=card-image>${Currentcards.foto}</div> 
+    <div class=card-image><img src="img/${Currentcards.foto}" alt="${Currentcards.nome}"></div> 
     <div class=card-name>${Currentcards.nome}</div> 
     <div class=card-ruole>${Currentcards.ruolo}</div> 
     </div>`;
